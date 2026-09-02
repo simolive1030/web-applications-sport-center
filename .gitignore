@@ -1,0 +1,7 @@
+client/node_modules/
+server/node_modules/
+server/sports-dump.sql
+server/generate-totp.mjs
+
+*.log
+.DS_Store
