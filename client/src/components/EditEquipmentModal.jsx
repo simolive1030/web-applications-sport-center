@@ -19,8 +19,7 @@ function buildInitialQuantities(rules, currentById) {
 
 /**
  * The modal for modifying the equipment of an existing reservation.
- * The picker bounds mirror the server rules (mandatory minimums, global stock,
- * and the "no increase" restriction for users with a negative score), but the
+ * The picker bounds mirror the server rules but the
  * final decision always belongs to the server.
  */
 function EditEquipmentModal({ show, reservation, rules, equipment, restricted, onClose, onSave }) {

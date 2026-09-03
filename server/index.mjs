@@ -9,11 +9,11 @@ import LocalStrategy from 'passport-local';                   // authentication 
 
 import { TOTP } from 'otpauth';
 
+import db from './src/config/db.mjs';
 import userDao from './src/dao/dao-users.mjs'; // module for accessing the user table in the DB
 import reservationDao from './src/dao/dao-reservations.mjs'; // module for accessing the reservations table in the DB
 // Importing service functions for reservation management
 import { createReservation, updateReservationEquipment, deleteReservation } from './src/services/reservation-service.mjs';
-import db from './src/config/db.mjs'; 
 
 
 /*** init express and set-up the middlewares ***/

@@ -1,6 +1,7 @@
 import sqlite3 from 'sqlite3';
 import { open } from 'sqlite';
 
+// Path to the SQLite database file with ./ because it is relative to the current working directory (CWD) of the Node.js process
 const DB_PATH = './sports.db';
 
 // Open the database

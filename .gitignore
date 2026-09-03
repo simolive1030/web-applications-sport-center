@@ -1,6 +1,6 @@
 client/node_modules/
 server/node_modules/
-server/sports-dump.sql
+server/sports_dump.sql
 server/generate-totp.mjs
 
 *.log
