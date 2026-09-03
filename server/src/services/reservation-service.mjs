@@ -242,7 +242,7 @@ export async function createReservation(userId, body) {
 
 /**
  * Replaces the entire equipment list of an existing reservation.
- * Expects a complete payload representing the final desired state (not a delta).
+ * Expects a complete payload representing the final desired state.
  */
 export async function updateReservationEquipment(userId, reservationId, newEquipmentList) {
 

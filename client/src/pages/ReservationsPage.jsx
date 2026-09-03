@@ -62,7 +62,9 @@ function ReservationsPage({ user, reservations, facilityTypes, equipment, notify
   const [deleteWaiting, setDeleteWaiting] = useState(false);
 
   const rulesFor = (reservation) =>
-    facilityTypes.find((type) => type.id === reservation.facilityTypeId && type.name === reservation.facilityType)?.equipmentRules ?? [];
+    facilityTypes.find((type) => 
+      type.id === reservation.facilityTypeId && 
+      type.name === reservation.facilityType)?.equipmentRules ?? [];
 
   const handleSave = async (reservationId, equipmentList) => {
     await API.updateReservationEquipment(reservationId, equipmentList);

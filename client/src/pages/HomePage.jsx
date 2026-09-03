@@ -81,21 +81,11 @@ function HomePage({ user, facilityTypes, equipment, error, onRefresh }) {
 
         <div className="d-flex flex-wrap gap-2">
           {user ? (
-            <Button
-              as={Link}
-              to="/reservations/new"
-              variant="light"
-              className="rounded-pill fw-semibold"
-            >
+            <Button as={Link} to="/reservations/new" variant="light" className="rounded-pill fw-semibold">
               Book a facility
             </Button>
           ) : (
-            <Button
-              as={Link}
-              to="/login"
-              variant="light"
-              className="rounded-pill fw-semibold"
-            >
+            <Button as={Link} to="/login" variant="light" className="rounded-pill fw-semibold"> 
               Sign in to book
             </Button>
           )}
