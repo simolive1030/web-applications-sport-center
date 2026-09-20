@@ -141,7 +141,7 @@ import session from 'express-session';
 
 // Set up session management with express-session
 app.use(session({
-  secret: "67ea59b3ac3aea2c9c0cb28563ffc01e5a71ef7cbcd97fbdfcf80bbdfea6efcb",
+  secret: process.env.SESSION_SECRET || 'development-only-secret',
   resave: false,
   saveUninitialized: false,
 }));
